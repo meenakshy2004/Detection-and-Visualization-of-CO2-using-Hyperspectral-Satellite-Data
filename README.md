@@ -13,17 +13,17 @@ In this project, hyperspectral satellite data is processed in MATLAB to detect r
 Sample hyperspectral datasets provided by MathWorks were used to validate the workflow. The implementation is compatible with real-world hyperspectral data from sensors such as AVIRIS, Landsat, Sentinel-2, or similar instruments.
 
    ### 2. Data Preparation
-     1. Hyperspectral data was loaded and handled using MATLAB’s Hyperspectral Imaging Toolbox
-     2. Radiance data was converted to reflectance for physical interpretability
-     3. Noise reduction techniques, including Gaussian smoothing, were applied to enhance spectral quality
-     4. Cleaned reflectance bands were prepared for further analysis
+     1.Hyperspectral data was loaded and handled using MATLAB’s Hyperspectral Imaging Toolbox
+     2.Radiance data was converted to reflectance for physical interpretability
+     3.Noise reduction techniques, including Gaussian smoothing, were applied to enhance spectral quality
+     4.Cleaned reflectance bands were prepared for further analysis
 
    ### 3. CO2 Detection Algorithm
    A Cluster-Tuned Matched Filter (CTMF)–based approach was implemented to estimate CO₂ concentrations.
    Key steps include:
    ##### 1. K- Means Clustering
-              •Hyperspectral pixels were grouped using k-means clustering
-              •Each cluster represents regions with similar spectral characteristics (e.g., vegetation, water bodies, atmosphere)
+              1.Hyperspectral pixels were grouped using k-means clustering
+              2.Each cluster represents regions with similar spectral characteristics (e.g., vegetation, water bodies, atmosphere)
    ##### 2. Matched Filter Design
               •Cluster-specific matched filters were designed to emphasize CO₂ absorption features
               •The filter enhances CO₂ spectral signatures while suppressing background signals
