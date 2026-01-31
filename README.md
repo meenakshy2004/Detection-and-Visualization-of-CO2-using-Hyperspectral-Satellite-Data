@@ -23,8 +23,8 @@ Sample hyperspectral datasets provided by MathWorks were used to validate the wo
 A Cluster-Tuned Matched Filter (CTMF)–based approach was implemented to estimate CO₂ concentrations.
 Key steps include:
    ##### a)	K- Means Clustering
-              •	Hyperspectral pixels were grouped using k-means clustering
-              •	Each cluster represents regions with similar spectral characteristics (e.g., vegetation, water bodies, atmosphere)
+              •Hyperspectral pixels were grouped using k-means clustering
+              •Each cluster represents regions with similar spectral characteristics (e.g., vegetation, water bodies, atmosphere)
    ##### b) Matched Filter Design
               •	Cluster-specific matched filters were designed to emphasize CO₂ absorption features
               •	The filter enhances CO₂ spectral signatures while suppressing background signals
