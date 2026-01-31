@@ -13,14 +13,14 @@ In this project, hyperspectral satellite data is processed in MATLAB to detect r
 Sample hyperspectral datasets provided by MathWorks were used to validate the workflow. The implementation is compatible with real-world hyperspectral data from sensors such as AVIRIS, Landsat, Sentinel-2, or similar instruments.
 
 ### 2. Data Preparation
-     1.Hyperspectral data was loaded and handled using MATLAB’s Hyperspectral Imaging Toolbox
-     2.Radiance data was converted to reflectance for physical interpretability
-     3.Noise reduction techniques, including Gaussian smoothing, were applied to enhance spectral quality
-     4.Cleaned reflectance bands were prepared for further analysis
+1. Hyperspectral data was loaded and handled using MATLAB’s Hyperspectral Imaging Toolbox
+2. Radiance data was converted to reflectance for physical interpretability
+3. Noise reduction techniques, including Gaussian smoothing, were applied to enhance spectral quality
+4. Cleaned reflectance bands were prepared for further analysis
 
 ### 3. CO2 Detection Algorithm
-   A Cluster-Tuned Matched Filter (CTMF)–based approach was implemented to estimate CO₂ concentrations.
-   Key steps include:
+A Cluster-Tuned Matched Filter (CTMF)–based approach was implemented to estimate CO₂ concentrations.
+Key steps include:
 ##### 1. K- Means Clustering
 1. Hyperspectral pixels were grouped using k-means clustering
 2. Each cluster represents regions with similar spectral characteristics (e.g., vegetation, water bodies, atmosphere)
@@ -28,16 +28,16 @@ Sample hyperspectral datasets provided by MathWorks were used to validate the wo
 1. Cluster-specific matched filters were designed to emphasize CO₂ absorption features
 2. The filter enhances CO₂ spectral signatures while suppressing background signals
 ##### 3. Filter Application
-              1. The matched filters were applied to the clustered hyperspectral data
-              2. Output maps highlight regions with anomalously high CO₂ concentrations
+1. The matched filters were applied to the clustered hyperspectral data
+2. Output maps highlight regions with anomalously high CO₂ concentrations
               
 ### 4. Data Analysis
-       1. CO₂ levels were estimated using spectral band ratios and absorption depth analysis
-       2. Relative concentration values were derived from reflectance variations across CO₂ absorption bands
+1. CO₂ levels were estimated using spectral band ratios and absorption depth analysis
+2. Relative concentration values were derived from reflectance variations across CO₂ absorption bands
        
 ### 5. Visualization
-       1. CO₂ concentration results were visualized using MATLAB’s Mapping Toolbox
-       2. Spatial distribution maps were generated to identify CO₂ hotspots over the study area
+1. CO₂ concentration results were visualized using MATLAB’s Mapping Toolbox
+2. Spatial distribution maps were generated to identify CO₂ hotspots over the study area
 
 ## Results
 The final outputs include:
